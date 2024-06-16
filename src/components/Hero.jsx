@@ -24,7 +24,7 @@ const Hero = () => {
               
               className="pb-16 text-5xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
-              Pavan Suthar
+              Pavan Suthar.
             </motion.h1>
             <motion.span 
              variants={conatiner(0.5)}
