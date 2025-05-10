@@ -1,6 +1,5 @@
 import project1 from "../assets/projects/project-1n.png";
 import project2 from "../assets/projects/project-2n.png";
-import project3 from "../assets/projects/project-3n.png";
 import project4 from "../assets/projects/project-4n.png";
 import project5 from "../assets/projects/image.png";
 export const HERO_CONTENT = `I'm a passionate full stack developer focused on building interactive, user-friendly web applications. I specialize in modern technologies like React, TypeScript, Next.js, Node.js, Express.js, MongoDB, and MySQL. My journey began with a curiosity for how the web works, and has since evolved into a drive to craft clean, scalable, and impactful digital experiences. Outside of development, I stay active and continuously explore the latest in tech to stay ahead of the curve.`;
@@ -31,7 +30,7 @@ export const EXPERIENCES = [
     technologies: [
       "JavaScript",
       "React.js",
-      "Next.js",
+      "Node.js",
       "MySQL",
       "Express.js",
       "Tailwind CSS",

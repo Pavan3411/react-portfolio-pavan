@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from '../constants';
-import profilePic from '../assets/kevinRushProfile.png';
+import profilePic from '../assets/pavan.jpg';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiTwitter, FiDownload, FiMail } from 'react-icons/fi';
 import Typewriter from 'typewriter-effect';
@@ -44,7 +44,6 @@ const Hero = () => {
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
-          <div className="absolute inset-0 bg-[url('../assets/grid.svg')]"></div>
         </div>
       </div>
       
@@ -92,29 +91,22 @@ const Hero = () => {
           </motion.p>
           
           <motion.div
-      variants={container(0.9)}
-      initial="hidden"
-      animate="visible"
-      className="flex flex-wrap gap-4 mt-8"
-    >
-      {/* Updated Email Button with Fallback */}
-<button
-  onClick={() => {
-    try {
-      window.location.href = "mailto:sutharpavan9153@gmail.com";
-      console.log("clicked email")
-    } catch (e) {
-      navigator.clipboard.writeText("sutharpavan9153@gmail.com");
-      alert("Email copied to clipboard!");
-    }
-  }}
-  className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
+  variants={container(0.9)}
+  initial="hidden"
+  animate="visible"
+  className="flex flex-wrap gap-4 mt-8 relative z-20"
 >
-  <FiMail />
-  Get In Touch
-</button>
-      {/* Resume Download Button */}
-      <a 
+  {/* Email Button */}
+  <a
+    href="mailto:sutharpavan9153@gmail.com"
+    className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
+  >
+    <FiMail />
+    Get In Touch
+  </a>
+
+  {/* Resume Download Button */}
+  <a 
     href="/Resume.pdf" 
     download="Pavan_Suthar_Resume.pdf"
     rel="noopener noreferrer"
@@ -123,7 +115,7 @@ const Hero = () => {
     <FiDownload />
     Download Resume
   </a>
-    </motion.div>
+</motion.div>
           
         </div>
         
