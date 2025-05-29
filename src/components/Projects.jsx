@@ -92,7 +92,10 @@ const Projects = () => {
                 {/* Show live demo for specific projects */}
                 {(project.title === "Customer-Centric B2B Product Platform" || 
                   project.title === "Food Delivery Website- Eatsify" ||
-                  project.title === "Podcast Platform - VoiceCast") && project.link && (
+                  project.title === "Podcast Platform - VoiceCast" ||
+                  project.title === "VES Business Website"
+                  
+                ) && project.link && (
                   <a 
                     href={project.link} 
                     target="_blank" 
